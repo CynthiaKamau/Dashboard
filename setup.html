@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Cynthia Kamau">
+
+
+    <!-- semantic package -->
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="semantic/dist/semantic.min.js"></script>
+     <!-- Main CSS -->
+    <link href="style/main.css" rel="stylesheet">
+  
+</head>
+<body>
+    <header>
+        <div class="ui grid">
+            <div class="ten wide column"></div>
+            <div class="six wide column headContent">
+                <div class="avatar"> <img class="ui medium circular image" src="img/3.jpg"> </div>
+                <div class="accountInfo"> 
+                    <h4> Kennedy K. Steven </h4>
+                    <h6>Normal User</h6>
+                </div>
+                <div class="settings"> <i class="setting icon"></i> </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="ui grid">
+            <div class="four wide column navigation">
+                <h5>MAIN</h5>
+                <ul>
+                    <li> <i class="alarm outline icon"></i> <a href="#">  NOTIFICATIONS </a></li>
+                    <li> <img src="img/icons/card.png"> <a href="#">  PAYMENTS </a></li>
+                    <li> <i class="setting icon"></i> <a href="setup.html">  SETUP </a></li>
+                </ul>
+
+                <h5>MUSIC SETTINGS</h5>
+                <ul>
+                    <li> <img src="img/icons/internet-2.png"> <a href="#">  View all the areas </a></li>
+                    <li> <img src="img/icons/lifting.png"> <a href="#">  GYM </a></li>
+                    <li> <img src="img/icons/spa.png"> <a href="#">  SPA </a></li>
+                    <li> <img src="img/icons/noodles.png"> <a href="#">  RESTAURANT </a></li>
+                    <li> <img src="img/icons/plus.png"> <a href="#">  ADD SECTION </a></li>
+                </ul>
+            </div>
+            <div class="twelve wide column"><br>
+                <div class="demogr">
+                 <h4>Kindly would you share with us the demography of your clients </h4>
+                 <h4>Age bracket</h4>
+                 <h4>What is the gender of majority of your clients?</h4>
+                </div>
+                <!--CAN-->
+                    <style>
+                    .soda{
+                    display:none;
+                    }
+                    </style>
+                    <!--DEMOGRAPHY -->
+                    <h4> What is your main area of interest?  </h4>
+                    <div class="one" id="input">
+                    <input onChange="handleSelection(value)" type="radio" id="relax" value="relaxation"/>Relaxation
+                    <input onChange="handleSelection(value)" type="radio" id="des" value="design"/>Design And Decor
+                    <input onChange="handleSelection(value)" type="radio" id="infl" value="influencedec"/> Influence Decisions
+                    <input onChange="handleSelection(value)" type="radio"  id="busstr" value="strategies"/> Bussiness Strategies
+                    </div><br>
+
+
+                    <!--RELAXATION-->
+                    <div class="soda" id="relaxation"> <a href="playlist.html"></a> </div>
+
+
+                    <!--DESIGN AND DECOR -->
+                    <div class="soda" id="design">
+                    <input onChange="handleSelection(value)" type="radio" id="dcr" value="decor"/>Decor
+                    <input onChange="handleSelection(value)" type="radio" id="blcr" value="blackcurrent"/>Blackcurrent
+                    </div> 
+
+
+                    <!--INFLUENCE DECISIONS-->
+                    <div class="soda" id="influencedec" >
+                    <h4>How would you describe your menu personality? </h4>
+                    <input onChange="handleSelection(value)" type="radio" id="alac" value="alacarte"/>Alacarte
+                    <input onChange="handleSelection(value)" type="radio" id="tabled" value="purchasingpower"/>Table d'hote
+                    </div> <br>
+
+
+                    <div class="soda"  id="purchasingpower">
+                    <h4>Would you like to influence high spending option or would you like you like your guests to spend a lot of time in your restaurant??</h4>
+                    <input onChange="handleSelection(value)" type="radio" id="hisp" value="eatinghabit"/>Enhance high spending
+                    <input onChange="handleSelection(value)" type="radio" id="time" value="eatinghabit"/>Spend time at your place
+                    </div> 
+
+                    <div class="soda"  id="alacarte">
+                    <h4>Would you like to focus on an individual entity?</h4>
+                    <input onChange="handleSelection(value)" type="radio" id="y" value="yes"/>Yes
+                    <input onChange="handleSelection(value)" type="radio" id="n" value="no"/>No
+                    </div> <br>
+
+
+                    <div class="soda"  id="yes">
+                    <h4>If so</h4>
+                    <input onChange="handleSelection(value)" type="radio" id="fd" value="food"/>Food
+                    <input onChange="handleSelection(value)" type="radio" id="dnk" value="drink"/>Drink
+                    </div>
+
+
+                     <div class="soda"  id="food">
+                    <input onChange="handleSelection(value)" type="radio" id="htg" value="heritage"/>Heritage
+                    <input onChange="handleSelection(value)" type="radio" id="dnk" value="drink"/>Drink
+                    </div><br>
+
+
+                     <div class="soda"  id="drink">
+                    <input onChange="handleSelection(value)" type="radio" id="spirit" value="eatinghabit"/>Spirits
+                    <input onChange="handleSelection(value)" type="radio" id="beer" value="purchasingpower"/>Beer
+                    <input onChange="handleSelection(value)" type="radio" id="wine" value="purchasingpower"/>Wine
+                    </div>
+
+
+                    <div class="soda"  id="eatinghabit">
+                    <h4>What is the intended eating habit for your visitors?</h4>
+                    <input onChange="handleSelection(value)" type="radio" id="fstbt" value="fastbeat"/>Fast Bit Rate
+                    <input onChange="handleSelection(value)" type="radio" id="slwbt" value="sloweat"/>Slow Eat Rate
+                    </div><br>
+
+
+                    <div class="soda"  id="strategies">
+                    <h4>Would you like to influence table turnover?</h4>
+                    <input onChange="handleSelection(value)" type="radio" id="e" value="non"/>Yes
+                    <input onChange="handleSelection(value)" type="radio" id="o" value="non"/>No
+                    </div>
+
+                    <a href="playlist.html"><div class="soda" id="non">
+                    <h4>Would you like to influence the purchasing power of your guests?</h4>
+                    <input type="radio" id="yes" />Yes
+                    <input type="radio" id="no" />No
+                     </a></div>
+
+
+                    
+                    <script type="text/javascript">
+
+                    function handleSelection(choice){
+                    document.getElementById('input').disabled=true;
+                    document.getElementById(choice).style.display="block";
+                    }
+
+                    </script>
+                    </body>
+                    <footer>
+                   
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
